@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: read
     steps:
-      - run: gh repo sync --branch main
+      - run: gh repo sync ValveSoftware/counter-strike_regional_standings --branch main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPOSITORY: ${{ github.repository }}
