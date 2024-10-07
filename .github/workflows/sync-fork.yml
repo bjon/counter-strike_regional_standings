@@ -13,7 +13,7 @@ jobs:
         with:
           fetch-depth: 0
       - run: |
-          git config --global user.name 'Bjön G Limell'
+          git config --global user.name 'bjon'
           git config --global user.email 'bjon@users.noreply.github.com'
           git remote add upstream https://github.com/ValveSoftware/counter-strike_regional_standings.git
           git fetch upstream
