@@ -1,7 +1,7 @@
 name: sync-fork
 on:
-  # schedule:
-  #   - cron: '0/30 * * * *'
+  schedule:
+    - cron: '0/30 * * * *'
   workflow_dispatch: { }
 jobs:
   sync:
@@ -9,11 +9,6 @@ jobs:
     permissions:
       contents: write
     steps:
-    #   - run: gh repo sync ValveSoftware/counter-strike_regional_standings --branch main
-    #     env:
-    #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #       REPOSITORY: ${{ github.repository }}
-    #       BRANCH_NAME: ${{ github.ref_name }}
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
