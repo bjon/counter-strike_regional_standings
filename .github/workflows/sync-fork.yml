@@ -22,4 +22,4 @@ jobs:
           git fetch upstream
           git checkout
           git merge --no-edit upstream/main
-          git push origin main
+          git push
