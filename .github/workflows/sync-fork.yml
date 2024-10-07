@@ -14,4 +14,5 @@ jobs:
     #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     #       REPOSITORY: ${{ github.repository }}
     #       BRANCH_NAME: ${{ github.ref_name }}
+      - uses: actions/checkout@v4
       - run: git fetch upstream
