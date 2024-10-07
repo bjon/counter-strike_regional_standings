@@ -15,4 +15,6 @@ jobs:
     #       REPOSITORY: ${{ github.repository }}
     #       BRANCH_NAME: ${{ github.ref_name }}
       - uses: actions/checkout@v4
-      - run: git fetch git@github.com:ValveSoftware/counter-strike_regional_standings.git
+      - run: |
+          git remote add upstream https://github.com/ValveSoftware/counter-strike_regional_standings.git
+          git fetch upstream
